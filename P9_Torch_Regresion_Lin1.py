@@ -10,7 +10,7 @@ from sklearn import datasets
 import matplotlib.pyplot as plt
 
 # PREPARAR DATOS
-X_numpy, Y_numpy = datasets.make_regression(n_samples=100, n_features=1, noise=20, random_state=4)
+X_numpy, y_numpy = datasets.make_regression(n_samples=100, n_features=1, noise=20, random_state=4)
 
 # ENVIAR A TENSOR DE PRECISION SENCILLA
 X = torch.from_numpy(X_numpy.astype(np.float32))
