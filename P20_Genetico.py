@@ -30,4 +30,11 @@ def get_fitness(guess):
 def mutate(parent):
     index = random.randrange(0,len(parent))
     childGenes = list(parent)
-    newGene, alternate = 
+    newGene, alternate = random.sample(geneSet,2))
+    childGenes[index] = alternate if newGene == childGenes[index] else newGene
+    return "".jpin(childGenes)
+
+# MONITOREO DE LA SOLUCION
+def display(guess):
+    timeDiff = datetime.datetime.now() - startTime
+
